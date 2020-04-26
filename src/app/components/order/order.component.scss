@@ -1,0 +1,35 @@
+$darkgrey: #353535;
+$lightgrey: lightgrey;
+
+.container {
+  background: $darkgrey;
+  margin: 10px 0;
+  font-weight: 700;
+  color: $lightgrey;
+  padding: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  .order {
+    .order-info {
+      text-align: left;
+    }
+    .order-info-inverted {
+      text-align: center;
+    }
+    .order-img {
+      width: fit-content;
+    }
+    .order-img-inverted {
+      margin: 0 auto;
+    }
+    .img-inverted {
+      width: 200px;
+    }
+  }
+}
+
+.order-inverted {
+  background: $lightgrey;
+  color: $darkgrey;
+}
+

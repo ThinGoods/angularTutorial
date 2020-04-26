@@ -1,0 +1,5 @@
+<div class="container">
+  <h3 *ngIf="!isLoaded">Загрузка...</h3>
+  <h3 *ngIf="user">Пользователь {{ user.name }}!</h3>
+  <img *ngIf="user" [src]="user.avatar">
+</div>

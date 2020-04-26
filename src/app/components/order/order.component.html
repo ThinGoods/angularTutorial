@@ -1,0 +1,8 @@
+<div class="container" [class.order-inverted]="isInverted">
+  <div class="order" *ngIf="orderInfo" (click)="changeColor()">
+    <div class="order-info" [class.order-info-inverted]="isInverted" >{{orderInfo.title}}, {{orderInfo.price}} {{orderInfo.currency}}</div>
+    <div class="order-img" [class.order-img-inverted]="isInverted">
+      <img [src]="orderInfo.url" [class.img-inverted]="isInverted">
+    </div>
+  </div>  
+</div>

@@ -1,0 +1,8 @@
+<div class="container">
+  <h3 *ngIf="!isLoaded">Загрузка...</h3> 
+  <order 
+    *ngFor="let order of orders" 
+    [orderInfo]="order" 
+  ></order>
+
+</div>
